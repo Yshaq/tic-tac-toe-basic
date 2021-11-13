@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family:  'Permanent Marker', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FCD8D4;
+}
+
+.board {
+
+    background: #FDF6F0;
+    border: 4px solid white;
+    border-radius: 15px;
+    min-width: 50vh;
+    min-height: 50vh;
+}
+
+.heading {
+    color: #F5C6AA;
+    text-align: center;
+    margin-top: 10px;
+} 
+
+.sub-title {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    color: #F5C6AA;
+}
+
+#reset {
+    border: none;
+    background: none;
+    font-family:  'Permanent Marker', cursive;
+    font-size: large;
+    font-weight: 400;
+    color: #F5C6AA;
+    cursor: pointer;
+
+}
+
+#reset:hover {
+    color: red;
+}
+
+.sub-title h3 {
+    font-weight: 400;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0.4rem;
+    margin: 1rem;
+    
+    margin-top: 3rem;
+    background: #FCD8D4;
+    justify-content: space-evenly;
+}
+
+.cell {
+    height: 10rem;
+    width: 10rem;
+    background: #FDF6F0;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.x::before {
+    content: 'X';
+    font-family: 'Permanent Marker', cursive;
+    font-size: 9rem;
+    color: #FFADAD;
+}
+
+.o::before {
+    content: 'O';
+    font-family: 'Permanent Marker', cursive;
+    font-size: 9rem;
+    color: #fae6a5
+}
+
+.xHover::before {
+    content: 'X';
+    font-family: 'Permanent Marker', cursive;
+    font-size: 9rem;
+    color: rgba(255,173,173,0.3);
+
+}
+
+.oHover::before {
+    content: 'O';
+    font-family: 'Permanent Marker', cursive;
+    font-size: 9rem;
+    color: rgba(250,230,165,0.3);
+
+}
